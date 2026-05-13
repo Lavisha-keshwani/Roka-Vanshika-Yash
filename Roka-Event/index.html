@@ -847,10 +847,14 @@
         opacity: 0.55;
       }
 
-      .bells,
-      .bells-left {
+      .bells {
         transform: scale(0.85);
         transform-origin: top center;
+      }
+
+      .bells-left {
+        transform: scale(0.85) scaleX(-1);
+        transform-origin: top left;
       }
 
       .story-content,
@@ -1206,15 +1210,17 @@
       .bells,
       .bells-left {
         top: -4px;
-        transform: scale(0.58);
       }
 
       .bells {
         right: 6px;
+        transform: scale(0.58);
       }
 
       .bells-left {
         left: 6px;
+        transform: scale(0.58) scaleX(-1);
+        transform-origin: top center;
       }
 
       .hero-content {
